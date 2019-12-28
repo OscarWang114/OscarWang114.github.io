@@ -56,16 +56,16 @@ gtag('config', 'UA-112185819-2');
           </button>
         </header>
         <section class="modal-body">
-          <p class="text-center modal__text">
+          <p class="modal__text">
             WasedaTime is an unofficial web app for syllabus searching, classroom finding, and bus schedule checking at Waseda University.
           </p>
           <div class="row justify-content-center">
-            <a href="https://wasedatime.com" class="btn-lg btn-success" role="button">
+            <a href="https://wasedatime.com" class="btn btn-success" role="button">
               Website <i class="fas fa-external-link-alt fa-1x"></i>
             </a>
           </div>
-          <p class="text-center modal__text">
-            This is an open source project I initiated to provide a convenient information platform for Waseda Students. It has acquired more than 4,000 returning users.
+          <p class="modal__text">
+            This is an open source project I initiated to provide a convenient information platform for Waseda Students. It has acquired more than 4,000 returning users and over 300K page views.
           </p>
           <div class="modal__badges">
             <span class="badge badge-success">Node.js</span>
@@ -85,8 +85,40 @@ gtag('config', 'UA-112185819-2');
     </div>
   </div>
   <!-- WasedaTime Modal Ends-->
+  <!-- Sentiment Analysis Modal Starts-->
+  <div class="modal fade sentiment-analysis-modal" id="sentiment-analysis-modal" tabindex="-1" role="dialog" aria-labelledby="sentiment-analysis-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <article class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="sentiment-analysis-modal-label">Sentiment Analysis on Movie Reviews</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+        <section class="modal-body">
+          <p class="modal__text">
+            In this project, I investigated various Deep Neural Networks for a kaggle challenge on sentiment classification of IMDb movie reviews. In the end, I achieved an AUC score above 0.90 on the test dataset with FastText embeddings, CNN, and BiLSTM.
+          </p>
+          <div class="row justify-content-center">
+            <a href="https://github.com/OscarWang114/sentiment-analysis-imdb" class="btn btn-success" role="button">
+              Source Code <i class="fas fa-external-link-alt fa-1x"></i>
+            </a>
+          </div>
+          <div class="modal__badges">
+            <span class="badge badge-success">Python</span>
+            <span class="badge badge-success">NLTK</span>
+            <span class="badge badge-success">Keras</span>
+          </div>
+        </section>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </footer>
+      </article>
+    </div>
+  </div>
+  <!-- Sentiment Analysis Modal Ends-->
   <!-- Waseda Syllabus Scraper Modal Starts-->
-  <div class="modal fade waseda-syllabus-scraper-modal" id="waseda-syllabus-scraper-modal" tabindex="-1" role="dialog" aria-labelledby="waseda-syllabus-scraper-modal-label" aria-hidden="true">
+<!--   <div class="modal fade waseda-syllabus-scraper-modal" id="waseda-syllabus-scraper-modal" tabindex="-1" role="dialog" aria-labelledby="waseda-syllabus-scraper-modal-label" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <article class="modal-content">
         <header class="modal-header">
@@ -96,15 +128,15 @@ gtag('config', 'UA-112185819-2');
           </button>
         </header>
         <section class="modal-body">
-          <p class="text-center modal__text">
+          <p class="modal__text">
             Waseda Syllabus Scraper is an automated web scraper that collects course information from the <a href="https://www.wsl.waseda.jp/syllabus/JAA101.php?pLng=en">syllabus database at Waseda University</a>.
           </p>
           <div class="row justify-content-center">
-            <a href="https://github.com/wasedatime/waseda-syllabus-scraper" class="btn-lg btn-success" role="button">
+            <a href="https://github.com/wasedatime/waseda-syllabus-scraper" class="btn btn-success" role="button">
               Source Code <i class="fas fa-external-link-alt fa-1x"></i>
             </a>
           </div>
-          <p class="text-center modal__text">
+          <p class="modal__text">
             This is an open source project I initiated to provide course, classroom, and building data for WasedaTime.
           </p>
           <div class="modal__badges">
@@ -120,7 +152,7 @@ gtag('config', 'UA-112185819-2');
         </footer>
       </article>
     </div>
-  </div>
+  </div> -->
   <!-- Waseda Syllabus Scraper Modal Ends-->
   <!-- LISA Modal Starts -->
   <div class="modal fade lisa-modal" id="lisa-modal" tabindex="-1" role="dialog" aria-labelledby="lisa-modal-label" aria-hidden="true">
@@ -133,16 +165,16 @@ gtag('config', 'UA-112185819-2');
           </button>
         </header>
         <section class="modal-body">
-          <p class="text-center modal__text">
+          <p class="modal__text">
             LISA is a managerial desktop application created for life insurance agents to document the complex relationship between clients and contractors.
           </p>
           <div class="row justify-content-center">
-            <a href="https://github.com/CS2103AUG2017-T13-B1/main" class="btn-lg btn-success" role="button">
+            <a href="https://github.com/CS2103AUG2017-T13-B1/main" class="btn btn-success" role="button">
               Source Code <i class="fas fa-external-link-alt fa-1x"></i>
             </a>
           </div>
-          <p class="text-center modal__text">
-            This is a five-man team project completed in a software engineering course.
+          <p class="modal__text">
+            This is a five-person team project completed in a software engineering course.
           </p>
           <div class="modal__badges">
             <span class="badge badge-success">Java</span>
@@ -436,21 +468,19 @@ gtag('config', 'UA-112185819-2');
           </button>
         </div>
       </article>
-<!--       <article class="projects__article projects-article waseda-syllabus-scraper">
+      <article class="projects__article projects-article sentiment-analysis">
         <h3 class="text-center">Sentiment Analysis on Movie Reviews</h3>
+        <p class="text-center">A Kaggle Challenge where I achieved an AUC score above 0.90 with Deep Neural Networks.</p>
         <div class="row justify-content-center">
-          <figure class="text-center">
-            <img class="waseda-syllabus-scraper__img" src="./img/projects/scrapy.png" alt="Scrapy">
-            <figcaption>Scrapy</figcaption>
-          </figure>
+          <img class="sentiment-analysis__img" src="./img/projects/sentiment_analysis.png" alt="Sentiment Analysis">
         </div>
         <div class="row justify-content-center projects-article__learn-more">
-          <button type="button" class="btn-lg btn-success" data-toggle="modal" data-target="#waseda-syllabus-scraper-modal">
+          <button type="button" class="btn-lg btn-success" data-toggle="modal" data-target="#sentiment-analysis-modal">
             Learn More
           </button>
         </div>
-      </article> -->
-      <article class="projects__article projects-article waseda-syllabus-scraper">
+      </article>
+<!--       <article class="projects__article projects-article waseda-syllabus-scraper">
         <h3 class="text-center">Waseda Syllabus Scraper</h3>
         <div class="row justify-content-center">
          <img class="waseda-syllabus-scraper__img" src="./img/projects/scrapy.png" alt="Scrapy">
@@ -460,7 +490,7 @@ gtag('config', 'UA-112185819-2');
             Learn More
           </button>
         </div>
-      </article>
+      </article> -->
       <article class="projects__article projects-article lisa">
         <h3 class="text-center">LISA: Levels Integrated Secretarial Agent</h3>
         <div class="lisa__row">

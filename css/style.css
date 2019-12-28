@@ -131,6 +131,10 @@
   height: 150px;
 }
 
+.sentiment-analysis__img {
+  height: 100px;
+}
+
 .lisa__row {
   margin: 0px -15px;
 }
@@ -164,6 +168,9 @@
   }
   .waseda-syllabus-scraper__img {
     height: 100px;
+  }
+  .sentiment-analysis__img {
+    height: 75px;
   }
   .lisa__img {
     width: 250px;
